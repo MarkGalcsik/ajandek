@@ -19,10 +19,9 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "header"
-        "nav"
         "article";
     grid-gap: 10px;
 }
@@ -33,8 +32,9 @@ body {
     background-image: url(virag.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
-
 
 header {
     grid-area: header;
@@ -43,17 +43,7 @@ header {
     text-align: center;
     font-size: 2em;
     padding: 10px;
-    text-shadow: 25px 25px 25px black;
-}
-
-nav {
-    grid-area: nav;
-    font-family: "vibes";
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    padding: 10px;
-    text-shadow: 25px 25px 25px black;
+    text-shadow: 50px 25px 25px black;
 }
 
 nav ul {
@@ -98,8 +88,8 @@ article {
     overflow: hidden;
     border: 5px solid rgb(255, 85, 113);
     box-shadow: 20px black;
-    width: 60%;
-    height: 90%;
+    width: 70%;
+    height: 80%;
 }
 
 .content {

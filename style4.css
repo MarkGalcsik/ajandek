@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 @font-face {
@@ -88,8 +89,8 @@ article {
     overflow: hidden;
     border: 5px solid rgb(255, 85, 113);
     box-shadow: 20px black;
-    width: 70%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
 }
 
 .content {
@@ -204,3 +205,10 @@ article {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .gift-wrap {
+        width: 60%;
+        height: 80%;
+    }
+    
+}
